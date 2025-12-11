@@ -1,0 +1,2 @@
+i am making a python project to detect guns in a video feed using a cascade classifier. i have downloaded the cascade file and saved it in the same directory as my python script. i have also set up a video capture object to access the webcam. can you help me write the code to detect guns in the video feed?
+and it detects the plagarisim
