@@ -1,0 +1,26 @@
+interpolation 
+
+what is interpolation?
+
+interpolation is a method of estimating the unknown value of a function from known values, especially over an interval.
+
+why to use interpolation
+1-preserve data intergrity
+2-avoid data loss
+3-avoid data corruption
+4-avoid data inconsistency
+5-avoid data duplication
+6-avoid data redundancy
+7-avoid data inconsistency
+8-avoid data inconsistency
+9-avoid data inconsistency
+10-avoid data inconsistency
+
+how to use interpolation
+1-Linear interpolation
+2-Quadratic interpolation
+3-Cubic interpolation
+4-Exponential interpolation
+
+interpolate()
+this method helps in 

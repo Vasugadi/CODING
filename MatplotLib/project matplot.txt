@@ -1,0 +1,18 @@
+project -goal
+
+1.what type of content Netflix have
+2.country spread
+3.rating pg-parent,r-adult,tv-m,tv-14.
+4.how much long
+
+// load -pandas
+
+//clean--pandas
+
+//understand data--
+
+//identify questions to answer
+
+//visualise
+
+// save plots

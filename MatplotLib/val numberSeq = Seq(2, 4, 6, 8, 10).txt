@@ -1,0 +1,14 @@
+val numberSeq = Seq(2, 4, 6, 8, 10)
+
+val rdd = sc.parallelize(numberSeq)
+
+val squarerdd = rdd.map(x => x * x)
+squarerdd.foreach(println)
+println("**")
+
+val filter_rdd = squarerdd.filter(x => x <= 50)
+filter_rdd.foreach(println)
+println("**")
+
+val counts = filter_rdd.count()
+println(counts)

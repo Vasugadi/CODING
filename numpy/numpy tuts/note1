@@ -1,0 +1,44 @@
+numpy is very useful for mathematical operations on arrays
+it is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays
+
+
+# numpy arrays
+- arrays are similar to lists in python but they are more efficient and faster
+- arrays are homogenous, meaning they can only contain elements of the same type
+- arrays are immutable, meaning they cannot be changed once created
+- arrays are stored in contiguous memory, meaning they can be accessed quickly
+- arrays are stored in a single block of memory, meaning they can be accessed quickly
+- arrays are stored in a single block of memory, meaning they can be accessed quickly
+
+# numpy array creation
+- numpy arrays can be created using the numpy.array() function, which takes a list or tuple as an argument
+- numpy arrays can also be created using the numpy.zeros() function, which creates an array of zeros of a specified shape
+- numpy arrays can also be created using the numpy.ones() function, which creates an array of ones of a specified shape
+
+
+# numpy array indexing
+- numpy arrays can be indexed using the same syntax as python lists, using square brackets []
+- numpy arrays can also be indexed using the numpy.where() function, which returns the indices of the elements that satisfy a given condition
+- numpy arrays can also be indexed using the numpy.argmin() and numpy.argmax() functions, which return the indices of the minimum and maximum elements, respectively
+- numpy arrays can also be indexed using the numpy.argsort() function, which returns the indices that would sort an array
+
+# numpy array slicing
+- numpy arrays can be sliced using the same syntax as python lists, using square brackets []
+- numpy arrays can also be sliced using the numpy.arange() function, which returns an array of evenly spaced values within a given interval
+- numpy arrays can also be sliced using the numpy.linspace() function, which returns an array of evenly spaced values within a given interval
+
+# numpy array operations
+- numpy arrays can be added, subtracted, multiplied, and divided using the same operators as python lists
+- numpy arrays can also be multiplied element-wise using the numpy.multiply() function
+- numpy arrays can also be divided element-wise using the numpy.divide() function
+- numpy arrays can also be raised to a power using the numpy.power() function
+- numpy arrays can also be raised to a power element-wise using the numpy.power() function
+- numpy arrays can also be multiplied by a scalar using the numpy.multiply() function
+- numpy arrays can also be divided by a scalar using the numpy.divide() function
+- numpy arrays can also be raised to a power by a scalar using the numpy.power() function
+- numpy arrays can also be multiplied by a matrix using the numpy.dot() function
+- numpy arrays can also be multiplied by a matrix element-wise using the numpy.multiply() function
+- numpy arrays can also be divided by a matrix element-wise using the numpy.divide() function
+- numpy arrays can also be raised to a power by a matrix element-wise using the numpy.power() function
+
+# numpy array functions

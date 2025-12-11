@@ -1,0 +1,89 @@
+stud_id,name,dep_id,year_study
+1,Aditi Sharma,10,2
+2,Ravi Kumar,20,3
+3,Sneha patel,10,1
+4,Aryan Mehta,30,2
+5,Priya Singh,40,4
+6,Karan Verma,NULL,3
+
+
+
+dep-id,dept_name,hod_name
+10,ComputerScience,Dr.rao
+20,Mechanical Engg,Dr.Sharma
+30,Civil Engg,Dr.Thomas
+40,Electrical Engg,Dr.Gupta
+50,Electronics,Dr.Das
+
+
+
+course_id,course_name,dep_id,credits
+101,DBMS,10,4
+102,THERMODYNAMICS,20,3
+103,Structures,30,4
+104,Circuits,40,3
+105,Microprocessors,50,4
+106,Ai,10,5
+
+
+select s.name,d.dep from students as s inner join department as d  on s.dep_id=d.dep_id
+
+select s.name,d.dep_name from student as s left join departments as d on 
+s.dep_id=d.dep_id
+
+SELECT d.dept_name, s.name AS student_name
+FROM departments d
+LEFT JOIN students s ON d.dep_id = s.dep_id group by s.sname ;
+
+select s.name,d.dep from students as s join departments as d on 
+s.dep_id=d.dep_id where d.dep_name="Computer Scinece"
+
+
+SELECT d.dept_name, COUNT(s.stud_id) AS student_count
+FROM departments d
+JOIN students s ON d.dep_id = s.dep_id
+GROUP BY d.dept_name
+HAVING COUNT(s.stud_id) > 1;
+
+SELECT s.name
+FROM students s
+LEFT JOIN courses c ON s.dep_id = c.dep_id
+WHERE c.course_id IS NULL;
+
+
+SELECT s.name AS student_name, c.course_name
+FROM students s
+JOIN courses c ON s.dep_id = c.dep_id;
+
+SELECT d.dept_name, c.course_name, COUNT(s.stud_id) AS student_count
+FROM departments d
+JOIN courses c ON d.dep_id = c.dep_id
+LEFT JOIN students s ON d.dep_id = s.dep_id
+GROUP BY d.dept_name, c.course_name;
+
+SELECT c.course_name, s.name AS student_name
+FROM courses c
+LEFT JOIN students s ON c.dep_id = s.dep_id;
+
+SELECT d.dept_name
+FROM departments d
+LEFT JOIN students s ON d.dep_id = s.dep_id
+WHERE s.stud_id IS NULL;
+
+SELECT d.dept_name
+FROM departments d
+LEFT JOIN courses c ON d.dep_id = c.dep_id
+WHERE c.course_id IS NULL;
+
+SELECT s.name AS student_name, c.course_name
+FROM students s
+CROSS JOIN courses c;
+
+SELECT s.name
+FROM students s
+JOIN departments d ON s.dep_id = d.dep_id
+WHERE d.hod_name LIKE 'D%';
+
+select d.dep_name,count(s.sid),avg(c.credits) from students as s join dep
+
+

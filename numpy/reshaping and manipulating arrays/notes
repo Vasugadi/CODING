@@ -1,0 +1,9 @@
+'''
+add
+remove
+stack 
+split
+'''
+
+insert
+np.insert(arr, index, values, axis=None)

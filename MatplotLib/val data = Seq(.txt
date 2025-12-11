@@ -1,0 +1,20 @@
+val data = Seq(
+  ("Alice", 85),
+  ("Bob", 78),
+  ("Alice", 92),
+  ("Bob", 88),
+  ("Charlie", 67),
+  ("Charlie", 73),
+  ("Alice", 90)
+)
+
+val studentMarksRDD = sc.parallelize(data)
+
+
+val totalMarksRDD = studentMarksRDD
+  .reduceByKey(_ + _)
+
+
+totalMarksRDD.collect().foreach {
+  case (name, total) => println(s"$name: $total")
+}
